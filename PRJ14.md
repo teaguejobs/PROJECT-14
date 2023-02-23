@@ -44,7 +44,7 @@ Inside the Ansible project, create a new directory deploy and start a new file J
 - Add the code snippet below to start building the Jenkinsfile gradually. This pipeline currently has just one stage called Build and the only thing we are doing is using the shell script module to echo Building Stage
 
 `pipeline {`
-    `agent any`
+      `agent any`
 
   `stages {`
     `stage('Build') {`
@@ -642,3 +642,9 @@ The complete stage will now look like this:
 ![alt text](./images.png/skip%20dev.PNG)
 
 - Notice that with the current state of the code, it cannot be deployed to Integration environments due to its quality. In the real world, DevOps engineers will push this back to developers to work on the code further, based on SonarQube quality report. Once everything is good with code quality, the pipeline will pass and proceed with sipping the codes further to a higher environment.
+
+
+OPTIONAL : Wireshark installation on pentest enviromment
+
+![alt text](./images.png/wireshark.PNG)
+
